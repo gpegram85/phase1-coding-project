@@ -1,0 +1,294 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "thumbnail": "<url>",
+      "genre": "Action-adventure",
+      "platform": "Nintendo Switch",
+      "publisher": "Nintendo",
+      "release_date": "2017-03-03",
+      "description": "Embark on a journey as Link to save the kingdom of Hyrule from the evil Calamity Ganon."
+    },
+    {
+      "id": 2,
+      "title": "The Witcher 3: Wild Hunt",
+      "thumbnail": "<url>",
+      "genre": "Action role-playing",
+      "platform": "PC, PlayStation 4, Xbox One",
+      "publisher": "CD Projekt",
+      "release_date": "2015-05-19",
+      "description": "Follow Geralt of Rivia, a monster hunter, as he searches for his adopted daughter in a vast open world."
+    },
+    {
+      "id": 3,
+      "title": "Red Dead Redemption 2",
+      "thumbnail": "<url>",
+      "genre": "Action-adventure",
+      "platform": "PlayStation 4, Xbox One, PC",
+      "publisher": "Rockstar Games",
+      "release_date": "2018-10-26",
+      "description": "Experience the end of the Wild West era as outlaw Arthur Morgan in this epic tale of loyalty and redemption."
+    },
+    {
+      "id": 4,
+      "title": "Super Mario Odyssey",
+      "thumbnail": "<url>",
+      "genre": "Platformer",
+      "platform": "Nintendo Switch",
+      "publisher": "Nintendo",
+      "release_date": "2017-10-27",
+      "description": "Join Mario on a globe-trotting adventure to rescue Princess Peach from Bowser's wedding plans."
+    },
+    {
+      "id": 5,
+      "title": "Dark Souls III",
+      "thumbnail": "<url>",
+      "genre": "Action role-playing",
+      "platform": "PC, PlayStation 4, Xbox One",
+      "publisher": "Bandai Namco Entertainment",
+      "release_date": "2016-04-12",
+      "description": "Face challenging enemies and explore dark fantasy landscapes in the third installment of the critically acclaimed series."
+    },
+    {
+      "id": 6,
+      "title": "Persona 5",
+      "thumbnail": "<url>",
+      "genre": "Role-playing",
+      "platform": "PlayStation 4",
+      "publisher": "Atlus",
+      "release_date": "2016-09-15",
+      "description": "Assume the role of a high school student in Tokyo who moonlights as a Phantom Thief to change the hearts of corrupt adults."
+    },
+    {
+      "id": 7,
+      "title": "Minecraft",
+      "thumbnail": "<url>",
+      "genre": "Sandbox, survival",
+      "platform": "PC, PlayStation 4, Xbox One, Nintendo Switch",
+      "publisher": "Mojang Studios",
+      "release_date": "2011-11-18",
+      "description": "Build, explore, and survive in a blocky world where the only limit is your imagination."
+    },
+    {
+      "id": 8,
+      "title": "The Last of Us Part II",
+      "thumbnail": "<url>",
+      "genre": "Action-adventure",
+      "platform": "PlayStation 4",
+      "publisher": "Sony Interactive Entertainment",
+      "release_date": "2020-06-19",
+      "description": "Follow Ellie's journey of revenge in a post-apocalyptic world overrun by hostile humans and infected creatures."
+    },
+    {
+      "id": 9,
+      "title": "Final Fantasy VII Remake",
+      "thumbnail": "<url>",
+      "genre": "Role-playing",
+      "platform": "PlayStation 4",
+      "publisher": "Square Enix",
+      "release_date": "2020-04-10",
+      "description": "Relive the iconic story of Cloud Strife and his allies as they battle against the evil Shinra corporation in this reimagining of a classic."
+    },
+    {
+      "id": 10,
+      "title": "Among Us",
+      "thumbnail": "<url>",
+      "genre": "Social deduction",
+      "platform": "PC, Android, iOS",
+      "publisher": "Innersloth",
+      "release_date": "2018-06-15",
+      "description": "Work together with crewmates to complete tasks and identify the impostors among you in this multiplayer party game."
+    },
+    {
+        "id": 11,
+        "title": "Cyberpunk 2077",
+        "thumbnail": "https://example.com/cyberpunk2077.jpg",
+        "genre": "Action role-playing",
+        "platform": "PC, PlayStation 4, Xbox One, Stadia",
+        "publisher": "CD Projekt",
+        "release_date": "2020-12-10",
+        "description": "Navigate the dystopian Night City as V, a mercenary outlaw, in this highly anticipated RPG from the creators of The Witcher series."
+      },
+      {
+        "id": 12,
+        "title": "The Elder Scrolls V: Skyrim",
+        "thumbnail": "https://example.com/skyrim.jpg",
+        "genre": "Action role-playing",
+        "platform": "PC, PlayStation 4, Xbox One, Nintendo Switch",
+        "publisher": "Bethesda Softworks",
+        "release_date": "2011-11-11",
+        "description": "Embark on an epic journey as the Dragonborn to save Skyrim from dragons and discover your destiny as the hero of legend."
+      },
+      {
+        "id": 13,
+        "title": "Grand Theft Auto V",
+        "thumbnail": "https://example.com/gtav.jpg",
+        "genre": "Action-adventure",
+        "platform": "PC, PlayStation 4, Xbox One, PlayStation 3, Xbox 360",
+        "publisher": "Rockstar Games",
+        "release_date": "2013-09-17",
+        "description": "Explore the sprawling open world of Los Santos and Blaine County in this critically acclaimed crime epic."
+      },
+      {
+        "id": 14,
+        "title": "Fortnite",
+        "thumbnail": "https://example.com/fortnite.jpg",
+        "genre": "Battle royale, sandbox",
+        "platform": "PC, PlayStation 4, Xbox One, Nintendo Switch, Android, iOS",
+        "publisher": "Epic Games",
+        "release_date": "2017-07-25",
+        "description": "Drop into a colorful world and compete to be the last one standing in this free-to-play battle royale phenomenon."
+      },
+      {
+        "id": 15,
+        "title": "League of Legends",
+        "thumbnail": "https://example.com/leagueoflegends.jpg",
+        "genre": "MOBA",
+        "platform": "PC",
+        "publisher": "Riot Games",
+        "release_date": "2009-10-27",
+        "description": "Choose from a diverse cast of champions and battle it out on Summoner's Rift in this highly popular multiplayer online battle arena game."
+      },
+      {
+        "id": 16,
+        "title": "Call of Duty: Warzone",
+        "thumbnail": "https://example.com/warzone.jpg",
+        "genre": "Battle royale, first-person shooter",
+        "platform": "PC, PlayStation 4, Xbox One",
+        "publisher": "Activision",
+        "release_date": "2020-03-10",
+        "description": "Jump into the intense action of Verdansk and fight to be the last squad standing in this free-to-play battle royale mode."
+      },
+      {
+        "id": 17,
+        "title": "Animal Crossing: New Horizons",
+        "thumbnail": "https://example.com/animalcrossing.jpg",
+        "genre": "Social simulation",
+        "platform": "Nintendo Switch",
+        "publisher": "Nintendo",
+        "release_date": "2020-03-20",
+        "description": "Create your own island paradise and live life at your own pace in this charming and relaxing life simulation game."
+      },
+      {
+        "id": 18,
+        "title": "FIFA 22",
+        "thumbnail": "https://example.com/fifa22.jpg",
+        "genre": "Sports simulation",
+        "platform": "PC, PlayStation 5, PlayStation 4, Xbox Series X/S, Xbox One",
+        "publisher": "Electronic Arts",
+        "release_date": "2021-10-01",
+        "description": "Experience the excitement of football with realistic gameplay and updated features in the latest installment of the FIFA series."
+      },
+      {
+        "id": 19,
+        "title": "Overwatch",
+        "thumbnail": "https://example.com/overwatch.jpg",
+        "genre": "Hero shooter",
+        "platform": "PC, PlayStation 4, Xbox One, Nintendo Switch",
+        "publisher": "Blizzard Entertainment",
+        "release_date": "2016-05-24",
+        "description": "Join a team of heroes and compete in fast-paced multiplayer matches to achieve victory in this team-based shooter."
+      },
+      {
+        "id": 20,
+        "title": "Assassin's Creed Valhalla",
+        "thumbnail": "https://example.com/acvalhalla.jpg",
+        "genre": "Action-adventure",
+        "platform": "PC, PlayStation 5, PlayStation 4, Xbox Series X/S, Xbox One",
+        "publisher": "Ubisoft",
+        "release_date": "2020-11-10",
+        "description": "Explore the Viking Age as Eivor, a fierce Viking warrior, and lead your clan to glory in the ninth century England."
+      },
+      {
+        "id": 21,
+        "title": "Halo Infinite",
+        "thumbnail": "https://example.com/haloinfinite.jpg",
+        "genre": "First-person shooter",
+        "platform": "PC, Xbox Series X/S, Xbox One",
+        "publisher": "Xbox Game Studios",
+        "release_date": "2021-12-08",
+        "description": "Master Chief returns in an epic campaign to save humanity from the Banished and uncover the mysteries of Zeta Halo."
+      },
+      {
+        "id": 22,
+        "title": "God of War",
+        "thumbnail": "https://example.com/godofwar.jpg",
+        "genre": "Action-adventure",
+        "platform": "PlayStation 4, PlayStation 5",
+        "publisher": "Sony Interactive Entertainment",
+        "release_date": "2018-04-20",
+        "description": "Embark on a journey with Kratos and his son Atreus through the realms of Norse mythology in this critically acclaimed epic."
+      },
+      {
+        "id": 23,
+        "title": "Counter-Strike: Global Offensive",
+        "thumbnail": "https://example.com/csgo.jpg",
+        "genre": "First-person shooter",
+        "platform": "PC",
+        "publisher": "Valve",
+        "release_date": "2012-08-21",
+        "description": "Engage in tactical multiplayer battles as either terrorists or counter-terrorists in this popular competitive shooter."
+      },
+      {
+        "id": 24,
+        "title": "The Legend of Zelda: Ocarina of Time",
+        "thumbnail": "https://example.com/ocarinaoftime.jpg",
+        "genre": "Action-adventure",
+        "platform": "Nintendo 64",
+        "publisher": "Nintendo",
+        "release_date": "1998-11-21",
+        "description": "Embark on a legendary quest as Link to rescue Princess Zelda and stop the evil Ganondorf from obtaining the Triforce."
+      },
+      {
+        "id": 25,
+        "title": "Doom Eternal",
+        "thumbnail": "https://example.com/doometernal.jpg",
+        "genre": "First-person shooter",
+        "platform": "PC, PlayStation 4, Xbox One, Nintendo Switch, Stadia",
+        "publisher": "Bethesda Softworks",
+        "release_date": "2020-03-20",
+        "description": "Unleash hell as the Doom Slayer and battle against hordes of demons from Hell in this fast-paced and brutal shooter."
+      },
+      {
+        "id": 26,
+        "title": "Pokémon Sword and Shield",
+        "thumbnail": "https://example.com/pokemonswordshield.jpg",
+        "genre": "Role-playing",
+        "platform": "Nintendo Switch",
+        "publisher": "Nintendo, The Pokémon Company",
+        "release_date": "2019-11-15",
+        "description": "Embark on a journey to become the Champion of the Galar region and catch, train, and battle Pokémon in the Wild Area."
+      },
+      {
+        "id": 27,
+        "title": "World of Warcraft",
+        "thumbnail": "https://example.com/wow.jpg",
+        "genre": "MMORPG",
+        "platform": "PC",
+        "publisher": "Blizzard Entertainment",
+        "release_date": "2004-11-23",
+        "description": "Enter the world of Azeroth and join millions of players in the epic adventure of World of Warcraft."
+      },
+      {
+        "id": 28,
+        "title": "The Sims 4",
+        "thumbnail": "https://example.com/thesims4.jpg",
+        "genre": "Life simulation",
+        "platform": "PC, PlayStation 4, Xbox One",
+        "publisher": "Electronic Arts",
+        "release_date": "2014-09-02",
+        "description": "Create unique Sims, build dream homes, and explore vibrant worlds in this popular life simulation game."
+      },
+      {
+        "id": 29,
+        "title": "Genshin Impact",
+        "thumbnail": "https://example.com/genshinimpact.jpg",
+        "genre": "Action role-playing",
+        "platform": "PC, PlayStation 4, iOS, Android",
+        "publisher": "miHoYo",
+        "release_date": "2020-09-28",
+        "description": "Embark on an epic journey across the fantasy world of Teyvat and uncover the secrets of the Seven."
+      }
+  ]
+}
