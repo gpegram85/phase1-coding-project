@@ -1,0 +1,129 @@
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    transition: .2s linear;
+    color: white;
+}
+
+body {
+    transform-origin: top left;
+    transition: 0.2s linear;
+    background-color: #12100E;
+}
+
+.game-shelf {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(60, 45, 75);
+}
+
+.game-box {
+    flex: 0 0 325px;
+    height: 400px;
+    background-color: #9b9b9b;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    margin: 4px;
+    box-shadow: 0px 7px 8px rgba(165, 165, 165, 0.2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.game-box:hover {
+    box-shadow: 0px 7px 8px rgba(165, 165, 165, 0.4);
+    transform: scale(1.02);
+}
+
+.game-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin: auto;
+    border-radius: 7px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    background: linear-gradient(to right, rgba(59, 56, 83, 0), rgba(59, 56, 83, .75));
+    position: relative;
+    height: 60px;
+}
+
+nav input {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #5b6c7c;
+    border-radius: 40px;
+}
+
+.logo-img {
+    float: left;
+    height: 60px;
+    padding-left: 10px;
+}
+
+.background-div {
+    height: 600px;
+    width: auto;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(60, 45, 75, 1)), url("./img/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    max-width: auto;
+}
+
+.intro-blurb p {
+    line-height: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    width: 75%;
+}
+
+.intro-blurb h2 {
+    text-align: left;
+}

@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <link rel="stylesheet" href="style.css" />
-        <title>futBALLER</title>
+        <title>Game Library</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        Start of Body<br>
-        <span id="title">F2P Games</span>
-        <div id="display-container">
-            Display Container for games.
+        <div class="background-div">
+            <img src="./img/logo2.png" alt="logo" class="logo-img">
+            <nav>
+                <input id="searchbar" type="text" name="searchbar" placeholder="Search for a game...">      
+                <ul>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        <div class="intro-blurb">
+        <p style="font-size: 45px"> Welcome to <strong>GameVault</strong>!</p>
+        <p>
+            This is your gateway to forging connections through the world of gaming! Dive into our expansive collection feature, where you can showcase your gaming library or find new favorites. Whether you're a seasoned collector or just starting your gaming journey, GameVault offers a platform to explore, connect, and engage with fellow gamers. 
+        </p>
+        <p>
+            Browse our curated collection to uncover hidden gems and timeless classics, each waiting to captivate your imagination. You can also connect with like-minded players who share your passion for your favorite games. 
+        </p>
+        <h2>Whether you're seeking a challenging quest, an adrenaline-pumping adventure, or a relaxing escape, GameVault empowers you to discover games tailored to your preferences.</h2>
+        <p>
+            Join our thriving community today and embark on a journey of exploration, connection, and endless gaming possibilities. Welcome to GameVault – where every game is a story waiting to be shared, and every player is a friend waiting to be met.
+        </p>
+
         </div>
+        
+        </div>
+            
+        <div id="game-shelf" class="game-shelf">
+        </div>
+
     <script src="./src/index.js"></script>
+
     </body>
 </html>
