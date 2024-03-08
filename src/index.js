@@ -1,6 +1,7 @@
+const gameShelf = document.getElementById('game-shelf')
 
 function createGameCard(game) {
-    const gameShelf = document.getElementById('game-shelf')
+    
     const gameBox = document.createElement('div')
     const gameThumbnail = document.createElement('img')
 
@@ -33,11 +34,47 @@ function fetchGames() {
     })
 }
 
-// function handleSearchGames {
-//     // insert code here
-// }
+function handleAddEventListeners() {
+    const searchSubmit = document.getElementById('searchbutton')
+    searchSubmit.addEventListener('click', () => handleSearchGames())
+}
+
+function handleSearchGames() {
+
+    fetch('http://localhost:3000/games')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(response.statusText)
+        }
+        return response.json()
+    })
+    .then(gameData => {
+
+        const query = searchbar.value.toLowerCase()    
+        const searchResults = gameData.filter(game => {
+            return (
+                game.title.toLowerCase().includes(query) ||
+                game.genre.toLowerCase().includes(query) ||
+                game.description.toLowerCase().includes(query) ||
+                game.platform.toLowerCase().includes(query)
+            )
+        })
+        displaySearchResults(searchResults)
+    })
+    .catch(error => {
+        console.error("Error retrieving games list: ", error)
+    })
+}
+
+function displaySearchResults(searchResults) {
+    gameShelf.innerHTML = ''
+    searchResults.forEach(game => {
+        createGameCard(game)
+    })
+}
 
 const main = () => {
+    handleAddEventListeners()
     fetchGames()
 }
 

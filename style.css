@@ -3,7 +3,7 @@
     font-family: "Roboto", sans-serif;
     font-style: normal;
     transition: .2s linear;
-    color: white;
+    /* color: white; */
 }
 
 body {
@@ -19,6 +19,17 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(60, 45, 75);
+    padding-bottom: 40px;
+}
+
+.game-detail {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(60, 45, 75);
+    padding-bottom: 40px;
 }
 
 .game-box {
@@ -59,13 +70,29 @@ nav {
     height: 60px;
 }
 
-nav input {
-    margin: 0;
+.search-container {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+}
+
+#searchbar {
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+#searchbutton {
+    background-color: ghostwhite;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+#searchbutton:hover {
+    background-color: lightslategrey
 }
 
 nav ul {
@@ -112,9 +139,9 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
     margin: 0 auto;
     max-width: auto;
+    color: ghostwhite;
 }
 
 .intro-blurb p {
@@ -125,5 +152,5 @@ nav ul li a:hover {
 }
 
 .intro-blurb h2 {
-    text-align: left;
+    text-align: center;
 }
