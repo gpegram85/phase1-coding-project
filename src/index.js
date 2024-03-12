@@ -131,8 +131,11 @@ function handleDeleteGame(game) {
         }
     })
     .catch(error => {
-        console.error('Error deleting game: ', error)
+        console.error(error)
     })
+    setTimeout(function() {
+        location.reload()
+    }, 1000)
 }
 
 function handleGameDetailDisplay(game) {
