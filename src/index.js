@@ -1,5 +1,5 @@
-const gameShelf = document.getElementById('game-shelf')
-const clearSearchBtn = document.getElementById('clear-search')
+
+let gameShelf, clearSearchBtn, addGameSubmit, searchSubmit, cancelBtn, newGameInput, newGameForm
 
 function createGameCard(game) {
     
@@ -19,46 +19,43 @@ function createGameCard(game) {
     gameShelf.appendChild(gameBox)
 }
 
-function fetchGames() {
-    const li = document.createElement('li')
-
-    fetch('http://localhost:3000/games')
-    .then(response => {
+async function fetchGames() {
+    try {
+        const response = await fetch('http://localhost:3000/games')
         if (!response.ok) {
             throw new Error(response.statusText)
         }
-        return response.json()
-      })
-    .then(gameData => {
-        console.log(gameData)
-
+        const gameData = await response.json()
+        
         gameData.forEach(game => {
             createGameCard(game)
             console.log(game.id)
         })
         handleMouseOver()
-    })
-    .catch(error => {
+    } catch (error) {
         console.error("Error retrieving games list: ", error)
-    })
-
+    }
 }
 
 function handleAddEventListeners() {
-    const searchSubmit = document.getElementById('searchbutton')
     searchSubmit.addEventListener('click', () => handleSearchGames())
+    addGameSubmit.addEventListener('click', () => displayNewGameForm())
+    cancelBtn.addEventListener('click', () => {
+        const gameForm = document.getElementById('game-form')
+        gameForm.reset()
+
+    })
+    newGameForm.addEventListener('submit', async (event) => handleAddNewGame(event))
 }
 
-function handleSearchGames() {
 
-    fetch('http://localhost:3000/games')
-    .then(response => {
+async function handleSearchGames() {
+    try {
+    const response = await fetch('http://localhost:3000/games')
         if (!response.ok) {
             throw new Error(response.statusText)
         }
-        return response.json()
-    })
-    .then(gameData => {
+        const gameData = await response.json()
 
         const query = searchbar.value.toLowerCase()    
         const searchResults = gameData.filter(game => {
@@ -77,10 +74,11 @@ function handleSearchGames() {
             nullSearchReturn.innerText = 'No games found matching your search. Please try again.'
             gameShelf.appendChild(nullSearchReturn)
         }
-    })
-    .catch(error => {
-        console.error("Error retrieving games list: ", error)
-    })
+
+    }
+        catch(error) {
+            console.error("Error retrieving games list: ", error)
+        }
 }
 
 function displaySearchResults(searchResults) {
@@ -120,19 +118,20 @@ function handleMouseOver() {
     })
 }
 
-function handleDeleteGame(game) {
-    console.log(game.id)
-    fetch(`http://localhost:3000/games/${game.id}`, {
+async function handleDeleteGame(game) {
+    try {
+     const response = await fetch(`http://localhost:3000/games/${game.id}`, {
         method: 'DELETE'
     })
-    .then(response =>{
-        if(!response.ok) {
-            throw new Error('Error deleting game: ' + response.statusText)
-        }
-    })
-    .catch(error => {
+
+    if(!response.ok) {
+        throw new Error('Error deleting game: ' + response.statusText)
+    }
+}
+    catch(error) {
         console.error(error)
-    })
+    }
+
     setTimeout(function() {
         location.reload()
     }, 1000)
@@ -186,7 +185,66 @@ function handleGameDetailDisplay(game) {
     gameDetailDiv.appendChild(deleteBtn)
 }
 
+function displayNewGameForm() {
+    newGameInput.classList.remove('hidden')
+    addGameSubmit.classList.add('hidden')
+}
+
+async function handleAddNewGame(event) {
+    event.preventDefault()
+
+    const form = event.target
+    const formData = new FormData(form)
+
+    const gameData = {}
+    for (const [key, value] of formData.entries()) {
+        if (key === 'platform') {
+            if (!gameData[key]) {
+                gameData[key] = ''
+            }
+            gameData[key] += value + ', '
+        } else {
+            gameData[key] = value
+        }
+    }
+
+    try {
+        const response = await fetch('http://localhost:3000/games', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(gameData)
+        })
+
+        if (!response.ok) {
+            throw new Error('Failed to add game')
+        }
+
+        console.log('Game added successfully')
+        // Optionally, you can reset the form after successful submission
+        form.reset()
+        newGameForm.classList.add('hidden')
+        gameShelf.innerHTML = ''
+        fetchGames()
+    } catch (error) {
+        console.error('Error adding game:', error)
+    }
+}
+
+function getElements() {
+    // Assign elements to global variables
+    gameShelf = document.getElementById('game-shelf')
+    clearSearchBtn = document.getElementById('clear-search')
+    addGameSubmit = document.getElementById('new-game-button')
+    searchSubmit = document.getElementById('searchbutton')
+    cancelBtn = document.getElementById('cancel-button')
+    newGameInput = document.getElementById('new-game-input')
+    newGameForm = document.getElementById('game-form')
+}
+
 const main = () => {
+    getElements()
     handleAddEventListeners()
     fetchGames()
 }

@@ -11,7 +11,9 @@
 
     <body>
         <div id="background-div" class="background-div">
-            <img src="./img/logo2.png" alt="logo" class="logo-img">
+            <a href="#">
+                <img src="./img/logo2.png" alt="logo" class="logo-img">
+            </a>
             <nav>
                 <div class="search-container">
                 <input id="searchbar" type="text" name="searchbar" placeholder=" Search for a game...">
@@ -24,22 +26,66 @@
                 </ul>
             </nav>
         <div id="intro-blurb">
-        <p style="font-size: 45px"> Welcome to <strong>GameVault</strong>!</p>
-        <p>
-            This is your gateway to forging connections through the world of gaming! Dive into our expansive collection feature, where you can showcase your gaming library or find new favorites. Whether you're a seasoned collector or just starting your gaming journey, GameVault offers a platform to explore, connect, and engage with fellow gamers. 
-        </p>
-        <p>
-            Browse our curated collection to uncover hidden gems and timeless classics, each waiting to captivate your imagination. You can also connect with like-minded players who share your passion for your favorite games. 
-        </p>
-        <h2>Whether you're seeking a challenging quest, an adrenaline-pumping adventure, or a relaxing escape, GameVault empowers you to discover games tailored to your preferences.</h2>
-        <p>
-            Join our thriving community today and embark on a journey of exploration, connection, and endless gaming possibilities. Welcome to GameVault – where every game is a story waiting to be shared, and every player is a friend waiting to be met.
-        </p>
-
+            <p style="font-size: 45px"> Welcome to <strong>GameVault</strong>!</p>
+            <p>
+                This is your gateway to forging connections through the world of gaming! Dive into our expansive collection feature, where you can showcase your gaming library or find new favorites. Whether you're a seasoned collector or just starting your gaming journey, GameVault offers a platform to explore, connect, and engage with fellow gamers. 
+            </p>
+            <p>
+                Browse our curated collection to uncover hidden gems and timeless classics, each waiting to captivate your imagination. You can also connect with like-minded players who share your passion for your favorite games. 
+            </p>
+            <h2>Whether you're seeking a challenging quest, an adrenaline-pumping adventure, or a relaxing escape, GameVault empowers you to discover games tailored to your preferences.</h2>
+            <p>
+                Join our thriving community today and embark on a journey of exploration, connection, and endless gaming possibilities. Welcome to GameVault – where every game is a story waiting to be shared, and every player is a friend waiting to be met.
+            </p>
         </div>
-        <button id="clear-search" class="hidden">Clear Search Results</button>
+            <button id="clear-search" class="hidden">Clear Search Results</button>
         </div>
-            
+        <div id="new-game" class="hidden">
+            <button type="button" id="new-game-button">Add New Game</button>
+                <form id="game-form">
+                    <div id="new-game-input" class="hidden">
+                        <label for="title">Game Title:</label>
+                        <input type="text" id="title" name="title" placeholder=" Game title..." required/>
+                        <label for="genre">Genre:</label>
+                        <select name="genre" id="genre">
+                            <option value="Action-adventure">Action Adventure</option>
+                            <option value="Action role=playing">RPG</option>
+                            <option value="Platformer">Platformer</option>
+                            <option value="Sandbox, survival">Sandbox, survival</option>
+                            <option value="Social deduction">Social deduction</option>
+                        </select>
+                        <fieldset>
+                            <legend>Platforms:</legend>
+                            <div>
+                            <input type="checkbox" id="platform-Playstation" name="platform" value="Playstation" />
+                            <label for="platform-Playstation">Playstation</label>
+                            </div>
+                            <div>
+                            <input type="checkbox" id="platform-Nintendo" name="platform" value="Nintendo" />
+                            <label for="platform-Nintendo">Nintendo</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="platform-Xbox One" name="platform" value="Xbox One" />
+                                <label for="platform-Xbox One">Xbox One</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="platform-PC" name="platform" value="PC" />
+                                <label for="platform-PC">PC</label>
+                            </div>
+                        </fieldset>
+                        <label for="publisher">Publisher:</label>
+                        <input type="text" id="publisher" name="publisher" placeholder=" Publisher..." required/>
+                        <label for="release_date">Release Date:</label>
+                        <input type="text" name="release_date" id="release_date" placeholder=" Release Date..." required/>
+                        <div>
+                            <label for="description">Description:</label>
+                            <textarea name="description" id="description" rows="6" placeholder="Write a brief game description..." required></textarea>
+                        </div>
+                        <button type="submit" id="new-game-submit">Submit</button>
+                        <button type="button" id="cancel-button">Cancel</button>
+                    </div>
+                </form>
+            </div>
         <div id="game-shelf" class="game-shelf">
         </div>
         <div id="game-detail" class="game-detail">

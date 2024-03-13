@@ -8,7 +8,7 @@
 body {
     transform-origin: top left;
     transition: 0.2s linear;
-    background-color: #12100E;
+    background-color: rgb(60, 45, 75);
 }
 
 .game-shelf {
@@ -87,6 +87,7 @@ body {
 .game-box:hover {
     box-shadow: 0px 7px 8px rgba(165, 165, 165, 0.4);
     transform: scale(1.02);
+    cursor: pointer;
 }
 
 .game-box img {
@@ -140,7 +141,8 @@ nav {
 }
 
 #searchbutton:hover {
-    background-color: lightslategrey
+    background-color: lightslategrey;
+    color: ghostwhite;
 }
 
 nav ul {
@@ -215,4 +217,52 @@ nav ul li a:hover {
 
 .not-fancy {
     opacity: 0.2;
+}
+
+#new-game {
+    display: flex;
+    background-color: rgb(60, 45, 75);
+    color: ghostwhite;
+    justify-content: center;
+    width: 100dvw;
+    padding-bottom: 40px;
+}
+
+#new-game input {
+    border-radius: 10px;
+}
+
+#new-game #game-title {
+    width: 250px;
+}
+
+#new-game #release-date {
+    width: 190px;
+}
+
+#new-game-button {
+    border-radius: 10px;
+}
+
+#new-game-submit {
+    background-color: ghostwhite;
+    border-radius: 10px;
+}
+
+#new-game-submit:hover {
+    background-color: lightslategrey;
+    color: ghostwhite;
+}
+
+#new-game-button:hover {
+    background-color: lightslategrey;
+    color: ghostwhite;
+}
+
+#description {
+    width: 100%;
+}
+
+#cancel-button {
+    border-radius: 10px;
 }
